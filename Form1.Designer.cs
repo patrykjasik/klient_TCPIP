@@ -28,12 +28,75 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.adres = new System.Windows.Forms.TextBox();
+            this.my_port = new System.Windows.Forms.NumericUpDown();
+            this.info_o_polaczeniu = new System.Windows.Forms.ListBox();
+            this.przycisk_polacz = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.my_port)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // adres
+            // 
+            this.adres.Location = new System.Drawing.Point(12, 12);
+            this.adres.Name = "adres";
+            this.adres.Size = new System.Drawing.Size(282, 20);
+            this.adres.TabIndex = 0;
+            this.adres.Text = "Adres";
+            // 
+            // my_port
+            // 
+            this.my_port.Location = new System.Drawing.Point(358, 12);
+            this.my_port.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
+            this.my_port.Name = "my_port";
+            this.my_port.Size = new System.Drawing.Size(334, 20);
+            this.my_port.TabIndex = 1;
+            // 
+            // info_o_polaczeniu
+            // 
+            this.info_o_polaczeniu.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.info_o_polaczeniu.FormattingEnabled = true;
+            this.info_o_polaczeniu.ItemHeight = 31;
+            this.info_o_polaczeniu.Location = new System.Drawing.Point(12, 51);
+            this.info_o_polaczeniu.Name = "info_o_polaczeniu";
+            this.info_o_polaczeniu.Size = new System.Drawing.Size(680, 190);
+            this.info_o_polaczeniu.TabIndex = 2;
+            // 
+            // przycisk_polacz
+            // 
+            this.przycisk_polacz.Location = new System.Drawing.Point(259, 263);
+            this.przycisk_polacz.Name = "przycisk_polacz";
+            this.przycisk_polacz.Size = new System.Drawing.Size(161, 70);
+            this.przycisk_polacz.TabIndex = 3;
+            this.przycisk_polacz.Text = "Połącz";
+            this.przycisk_polacz.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(765, 356);
+            this.Controls.Add(this.przycisk_polacz);
+            this.Controls.Add(this.info_o_polaczeniu);
+            this.Controls.Add(this.my_port);
+            this.Controls.Add(this.adres);
+            this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.my_port)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox adres;
+        private System.Windows.Forms.NumericUpDown my_port;
+        private System.Windows.Forms.ListBox info_o_polaczeniu;
+        private System.Windows.Forms.Button przycisk_polacz;
     }
 }
 
