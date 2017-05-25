@@ -67,12 +67,13 @@
             // 
             // przycisk_polacz
             // 
-            this.przycisk_polacz.Location = new System.Drawing.Point(259, 263);
+            this.przycisk_polacz.Location = new System.Drawing.Point(273, 261);
             this.przycisk_polacz.Name = "przycisk_polacz";
             this.przycisk_polacz.Size = new System.Drawing.Size(161, 70);
             this.przycisk_polacz.TabIndex = 3;
             this.przycisk_polacz.Text = "Połącz";
             this.przycisk_polacz.UseVisualStyleBackColor = true;
+            this.przycisk_polacz.Click += new System.EventHandler(this.przycisk_polacz_Click);
             // 
             // Form1
             // 
